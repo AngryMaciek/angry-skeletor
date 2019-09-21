@@ -58,7 +58,10 @@ case $(echo $1 | cut -d . -f2) in
 
     py) cp `dirname $0`/templates/template.py $1 ;;
 
-    r) cp `dirname $0`/templates/template.r $1 ;;
+    r) # R script
+        sed $SED_COMMAND \
+        <`dirname $0`/templates/template.r \
+        >$1;;
 
     sh) # shell script
         sed $SED_COMMAND \
