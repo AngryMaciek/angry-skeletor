@@ -2,12 +2,12 @@
 
 ###############################################################################
 #
-#	TITLE, DESCRIPTION
+#   [TITLE, DESCRIPTION]
 #
-#	AUTHOR: {AUTHOR}
-#	CONTACT: {EMAIL}
-#	CREATED: {DATE}
-#	LICENSE: {LICENSE}
+#   AUTHOR: {AUTHOR}
+#   CONTACT: {EMAIL}
+#   CREATED: {DATE}
+#   LICENSE: {LICENSE}
 #   USAGE: ...
 #
 ###############################################################################
