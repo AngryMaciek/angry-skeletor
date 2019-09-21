@@ -14,3 +14,5 @@ sh
 yaml
 
 template sh
+
+use gnu sed! on osx tabs get space

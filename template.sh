@@ -41,11 +41,17 @@ SED_COMMAND="\
 # match the file name against extensions
 case $(echo $1 | cut -d . -f2) in
 
-    c) cp `dirname $0`/templates/template.c $1 ;;
+    c) # C file with implementation
+        sed $SED_COMMAND \
+        <`dirname $0`/templates/template.c \
+        >$1;;
 
     cpp) cp `dirname $0`/templates/template.cpp $1 ;;
 
-    h) cp `dirname $0`/templates/template.h $1 ;;
+    h) # header file
+        sed $SED_COMMAND \
+        <`dirname $0`/templates/template.h \
+        >$1;;
 
     py) cp `dirname $0`/templates/template.py $1 ;;
 
