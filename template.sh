@@ -46,7 +46,10 @@ case $(echo $1 | cut -d . -f2) in
         <`dirname $0`/templates/template.c \
         >$1;;
 
-    cpp) cp `dirname $0`/templates/template.cpp $1 ;;
+    cpp) # C++ file with implementation
+        sed $SED_COMMAND \
+        <`dirname $0`/templates/template.cpp \
+        >$1;;
 
     h) # header file
         sed $SED_COMMAND \
