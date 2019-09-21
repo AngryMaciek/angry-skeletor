@@ -5,6 +5,7 @@
 #   Master script to generate template-based text files
 #
 #   AUTHOR: Maciej_Bak
+#   AFFILIATION: Swiss_Institute_of_Bioinformatics
 #   CONTACT: wsciekly.maciek@gmail.com
 #   CREATED: 21-09-2019
 #   LICENSE: GPL
@@ -14,6 +15,7 @@
 
 # define the global variables
 AUTHOR="Maciej_Bak"
+AFFILIATION="Swiss_Institute_of_Bioinformatics"
 EMAIL="wsciekly.maciek@gmail.com"
 DATE=`date +"%d-%m-%Y"`
 LICENSE="GPL"
@@ -33,6 +35,7 @@ fi
 # create the substitution command for sed
 SED_COMMAND="\
 -e s/{AUTHOR}/$AUTHOR/g \
+-e s/{AFFILIATION}/$AFFILIATION/g \
 -e s/{EMAIL}/$EMAIL/g \
 -e s/{DATE}/$DATE/g \
 -e s/{LICENSE}/$LICENSE/g \
