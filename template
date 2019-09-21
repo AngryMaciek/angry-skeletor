@@ -9,7 +9,7 @@
 #   CONTACT: wsciekly.maciek@gmail.com
 #   CREATED: 21-09-2019
 #   LICENSE: GPL
-#   USAGE: bash template.sh <FILENAME>
+#   USAGE: bash template <FILENAME>
 #
 ###############################################################################
 
