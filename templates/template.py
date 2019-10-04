@@ -12,10 +12,10 @@
 ##############################################################################
 
 # imports
-import sys
 import os
 import time
 import logging
+import logging.handlers
 from argparse import ArgumentParser, RawTextHelpFormatter
 
 def parse_arguments():
@@ -79,20 +79,10 @@ if __name__ == '__main__':
         minutes, seconds = divmod(seconds, 60)
         hours, minutes = divmod(minutes, 60)
         logger.info("Successfully finished in {hours} hour(s) \
-{minutes} minute(s) and {seconds} second(s)".format(
-        hours=int(hours),
-        minutes=int(minutes),
-        seconds=int(seconds) if seconds > 1.0 else 1
-        ))
-    # log the execution time in case of interruption
-    except KeyboardInterrupt as e:
-        logger.warn("Interrupted by user after {hours} hour(s) \
-{minutes} minute(s) and {seconds} second(s)".format(
-        hours=int(hours),
-        minutes=int(minutes),
-        seconds=int(seconds) if seconds > 1.0 else 1
-        ))
-        sys.exit(-1)
+{minutes} minute(s) and {seconds} second(s)",
+                    hours=int(hours),
+                    minutes=int(minutes),
+                    seconds=int(seconds) if seconds > 1.0 else 1)
     # log the exception in case it happens
     except Exception as e:
         logger.exception(str(e))
