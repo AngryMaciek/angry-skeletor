@@ -49,3 +49,7 @@ Create a C header file:
 ```bash
 template my_path/header.h
 ```
+
+## License
+
+GNU General Public License v3.0

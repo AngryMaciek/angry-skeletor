@@ -18,7 +18,7 @@ AUTHOR="Maciej_Bak"
 AFFILIATION="Swiss_Institute_of_Bioinformatics"
 EMAIL="wsciekly.maciek@gmail.com"
 DATE=`date +"%d-%m-%Y"`
-LICENSE="GPL"
+LICENSE="GPL_v3.0"
 
 # check for the correct call
 if [ $# -ge 2 ]; then
