@@ -17,7 +17,7 @@
 AUTHOR="Maciej_Bak"
 AFFILIATION="Swiss_Institute_of_Bioinformatics"
 EMAIL="wsciekly.maciek@gmail.com"
-DATE=`date +"%d-%m-%Y"`
+DATE=$(date +"%d-%m-%Y")
 LICENSE="GPL_v3.0"
 
 # check for the correct call
@@ -42,44 +42,49 @@ SED_COMMAND="\
 "
 
 # match the file name against extensions
-case $(echo $1 | cut -d . -f2) in
+case $(echo "$1" | cut -d . -f2) in
 
     c) # C file with implementation
         sed $SED_COMMAND \
-        <`dirname $0`/templates/template.c \
-        >$1;;
+            <"$(dirname "$0")"/templates/template.c \
+            >"$1" ;;
 
     cpp) # C++ file with implementation
         sed $SED_COMMAND \
-        <`dirname $0`/templates/template.cpp \
-        >$1;;
+            <"$(dirname "$0")"/templates/template.cpp \
+            >"$1" ;;
 
     h) # header file
         sed $SED_COMMAND \
-        <`dirname $0`/templates/template.h \
-        >$1;;
+            <"$(dirname "$0")"/templates/template.h \
+            >"$1" ;;
 
     py) # Python script
         sed $SED_COMMAND \
-        <`dirname $0`/templates/template.py \
-        >$1;;
+            <"$(dirname "$0")"/templates/template.py \
+            >"$1" ;;
 
     r) # R script
         sed $SED_COMMAND \
-        <`dirname $0`/templates/template.r \
-        >$1;;
+            <"$(dirname "$0")"/templates/template.r \
+            >"$1" ;;
+
+    R) # R script
+        sed $SED_COMMAND \
+            <"$(dirname "$0")"/templates/template.r \
+            >"$1" ;;
 
     sh) # shell script
         sed $SED_COMMAND \
-        <`dirname $0`/templates/template.sh \
-        >$1;;
+            <"$(dirname "$0")"/templates/template.sh \
+            >"$1" ;;
 
-    yaml) # yaml file
+    yml) # yaml file
         sed $SED_COMMAND \
-        <`dirname $0`/templates/template.yaml \
-        >$1;;
+            <"$(dirname "$0")"/templates/template.yml \
+            >"$1" ;;
 
     *) #other files
-        echo "Template undefined.";;
+        echo "Template undefined." ;;
 
 esac

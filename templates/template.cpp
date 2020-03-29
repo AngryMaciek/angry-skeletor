@@ -13,14 +13,11 @@
 ###############################################################################
 */
 
-#include <cstdlib>
 #include <cstdio>
+#include <cstdlib>
 
 // [DESCRIPTION]
-void hello_world(int n){
-}
+void hello_world(int n) {}
 
 // MAIN
-int main(void){
-    return 0;
-}
+int main(void) { return 0; }

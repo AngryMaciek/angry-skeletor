@@ -34,4 +34,4 @@ void hello_world(int n);
 }
 #endif
 
-#endif
+#endif  // LIBRARY_NAME_H
