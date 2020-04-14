@@ -62,13 +62,12 @@ if __name__ == "__main__":
 
         # set up logging during the execution
         formatter = logging.Formatter(
-            fmt="[%(asctime)s] %(levelname)s\
-                                      - %(message)s",
+            fmt="[%(asctime)s] %(levelname)s - %(message)s",
             datefmt="%d-%b-%Y %H:%M:%S",
         )
         console_handler = logging.StreamHandler()
         console_handler.setFormatter(formatter)
-        logger = logging.getLogger("uniprot_to_json")
+        logger = logging.getLogger("logger")
         logger.setLevel(logging.getLevelName(options.verbosity))
         logger.addHandler(console_handler)
         if options.logfile is not None:
@@ -88,8 +87,7 @@ if __name__ == "__main__":
         minutes, seconds = divmod(seconds, 60)
         hours, minutes = divmod(minutes, 60)
         logger.info(
-            "Successfully finished in {hours} hour(s) \
-{minutes} minute(s) and {seconds} second(s)",
+            "Successfully finished in {hours}h:{minutes}m:{seconds}s",
             hours=int(hours),
             minutes=int(minutes),
             seconds=int(seconds) if seconds > 1.0 else 1,
