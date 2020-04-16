@@ -8,7 +8,7 @@
 #   AFFILIATION: Swiss_Institute_of_Bioinformatics
 #   CONTACT: wsciekly.maciek@gmail.com
 #   CREATED: 21-09-2019
-#   LICENSE: GPL
+#   LICENSE: Apache_2.0
 #   USAGE: bash template <FILENAME>
 #
 ###############################################################################
@@ -18,7 +18,7 @@ AUTHOR="Maciej_Bak"
 AFFILIATION="Swiss_Institute_of_Bioinformatics"
 EMAIL="wsciekly.maciek@gmail.com"
 DATE=$(date +"%d-%m-%Y")
-LICENSE="GPL_v3.0"
+LICENSE="Apache_2.0"
 
 # check for the correct call
 if [ $# -ge 2 ]; then

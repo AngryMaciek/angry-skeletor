@@ -52,4 +52,4 @@ template my_path/header.h
 
 ## License
 
-GNU General Public License v3.0
+Apache 2.0
