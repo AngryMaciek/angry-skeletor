@@ -1,4 +1,4 @@
-# Template-based text file generator
+# Angry template-based text file generator
 
 *Maciej Bak  
 Swiss Institute of Bioinformatics*
@@ -10,23 +10,23 @@ A very small tool to generate text files based on pre-defined templates.
 Clone this repository (under your $HOME directory):
 ```bash
 cd;
-git clone https://github.com/AngryMaciek/textfile-templates.git;
+git clone https://github.com/AngryMaciek/angry-textfile-templates.git;
 ```
 
 Add the path to the repository to your $PATH permanently:
 ```bash
 vim .bash_profle
 # add the following line into the profile file:
-# export PATH=$PATH":$HOME/textfile-templates"
+# export PATH=$PATH":$HOME/angry-textfile-templates"
 ```
 Update the global variables with your personal information:
 ```bash
-vim textfile-templates/template
+vim angry-textfile-templates/template
 ```
 
 Give the execution permissions to the script:
 ```bash
-chmod +x textfile-templates/template
+chmod +x angry-textfile-templates/template
 ```
 
 And finally: restart shell
