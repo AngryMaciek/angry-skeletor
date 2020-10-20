@@ -1,7 +1,4 @@
-<img align="right" height="100" src="img/icon.png" alt="skeletor">
-<br>
-<br>
-<br>
+<img align="right" height="150" src="img/icon.png" alt="skeletor">
 
 # SKELETOR
 
