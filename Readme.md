@@ -1,9 +1,14 @@
-# Angry template-based text file generator
+<p align="right">
+  <img src="img/icon.png" alt="skeletor">
+</p>
+
+---
+# SKELETOR
 
 *Maciej Bak  
 Swiss Institute of Bioinformatics*
 
-A very small tool to generate text files based on pre-defined templates.
+SKELETOR is a very small tool to generate text files based on pre-defined templates.
 
 ## Setup
 
@@ -53,3 +58,10 @@ template my_path/header.h
 ## License
 
 Apache 2.0
+
+<p align="center">
+  <br>
+  <br>
+  <br>
+  <img src="img/exit.gif" alt="skeletor">
+</p>
