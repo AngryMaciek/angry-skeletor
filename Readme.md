@@ -1,8 +1,8 @@
-<p align="right">
-  <img src="img/icon.png" alt="skeletor">
-</p>
+<img align="right" height="100" src="img/icon.png" alt="skeletor">
+<br>
+<br>
+<br>
 
----
 # SKELETOR
 
 *Maciej Bak  
