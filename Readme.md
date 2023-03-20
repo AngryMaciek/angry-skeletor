@@ -13,23 +13,23 @@ SKELETOR is a very small tool to generate text files based on pre-defined templa
 Clone this repository (under your $HOME directory):
 ```bash
 cd;
-git clone https://github.com/AngryMaciek/angry-textfile-templates.git;
+git clone https://github.com/AngryMaciek/angry-skeletor.git;
 ```
 
 Add the path to the repository to your $PATH permanently:
 ```bash
 vim .bash_profle
 # add the following line into the profile file:
-# export PATH=$PATH":$HOME/angry-textfile-templates"
+# export PATH=$PATH":$HOME/angry-skeletor"
 ```
 Update the global variables with your personal information:
 ```bash
-vim angry-textfile-templates/template
+vim angry-skeletor/template
 ```
 
 Give the execution permissions to the script:
 ```bash
-chmod +x angry-textfile-templates/template
+chmod +x angry-skeletor/template
 ```
 
 And finally: restart shell
